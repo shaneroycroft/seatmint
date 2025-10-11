@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeatMint.io - Coming Soon! (P2P Tickets)</title>
+    <style>
+        /* Define the new color palette */
+        :root {
+            --color-primary: #111111; /* Deep Charcoal/Black */
+            --color-secondary: #006644; /* Dark Forest Green */
+            --color-mint: #88DDAA; /* Soft Mint Green */
+            --color-action: #00AA66; /* Rich Bright Green (for buttons) */
+            --color-bg-soft: #F0FFF0; /* Very light Mint/Grey background */
+        }
+
+        /* CSS for the early 2000s aesthetic */
+        body {
+            font-family: Verdana, Arial, sans-serif; /* Classic web font */
+            background-color: var(--color-bg-soft); /* Easy on the eyes light mint */
+            color: var(--color-primary);
+            margin: 0;
+            padding: 20px;
+            text-align: center; /* Everything is centered! */
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 30px 20px;
+            background-color: #FFFFFF;
+            border: 5px solid var(--color-primary); /* Solid, thick border */
+            /* The classic "swoosh" effect using the mint color */
+            box-shadow: 12px 12px 0px 0px var(--color-mint); 
+            border-radius: 4px; /* A touch of subtle rounding */
+        }
+
+        h1 {
+            font-size: 48px;
+            color: var(--color-primary);
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            /* Subtler text shadow */
+            text-shadow: 1px 1px 0px #EEEEEE; 
+        }
+
+        h2 {
+            font-size: 20px;
+            color: var(--color-secondary); 
+            margin-top: 0;
+            font-weight: bold;
+            border-bottom: 2px dashed var(--color-mint); /* Dashed lines use the mint accent */
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            margin-bottom: 25px;
+        }
+
+        /* Form Styling */
+        #notify-form {
+            background-color: #F8FFF8; /* Very subtle light green background for the form area */
+            padding: 20px;
+            border: 1px solid var(--color-mint);
+            margin-top: 30px;
+            border-radius: 4px;
+        }
+
+        input[type="email"] {
+            padding: 12px;
+            width: 60%;
+            max-width: 300px;
+            margin-right: 10px;
+            border: 2px solid var(--color-mint);
+            font-size: 16px;
+            box-sizing: border-box; /* Crucial for responsive forms */
+        }
+
+        button {
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: var(--color-action); 
+            color: white;
+            /* Classic 3D button effect using a darker shadow */
+            border: 3px outset var(--color-secondary); 
+            cursor: pointer;
+            text-transform: uppercase;
+            border-radius: 2px;
+            transition: background-color 0.2s;
+        }
+        
+        button:hover {
+            background-color: var(--color-secondary);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            .container {
+                margin: 20px auto;
+                box-shadow: 8px 8px 0px 0px var(--color-mint); 
+            }
+            h1 {
+                font-size: 32px;
+                letter-spacing: 1px;
+            }
+            input[type="email"] {
+                width: 100%;
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+            button {
+                width: 100%;
+            }
+        }
+
+        /* Footer/Legal */
+        .footer {
+            margin-top: 40px;
+            font-size: 12px;
+            color: #666666;
+        }
+
+        .footer a {
+            color: var(--color-secondary);
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <h1>SeatMint.io</h1>
+        <h2>Coming soon...</h2>
+
+        <p>
+            The future is Cardano.
+        </p>
+        
+        <div id="notify-form">
+            <p><strong>Be the first to know when we launch!</strong></p>
+            <form onsubmit="event.preventDefault(); document.getElementById('success-message').style.display='block'; this.reset();" action="#" method="POST">
+                <input type="email" placeholder="Enter your email address here..." required>
+                <button type="submit">Notify Me!</button>
+            </form>
+            
+            <!-- Simple message box instead of alert() -->
+            <div id="success-message" style="display:none; margin-top: 15px; padding: 10px; background-color: var(--color-mint); color: var(--color-primary); border: 1px solid var(--color-secondary);">
+                This feature doesn't work yet ;) .
+            </div>
+
+            <p style="font-size:14px; margin-top:15px; color:#555;">(This doesn't work yet!)</p>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        &copy; 2004-2025 SeatMint.io All Rights Reserved. | <a href="#">Terms</a> | <a href="#">Privacy</a>
+    </div>
+
+</body>
+</html>
