@@ -1,0 +1,2 @@
+# seatmint
+Decentralized event platform
