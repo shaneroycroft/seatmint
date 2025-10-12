@@ -1,0 +1,8 @@
+[project]
+package = "seatmint-ticket"
+version = "0.1.0"
+
+[contracts]
+[contracts.ticket]
+name = "ticket"
+file = "validators/ticket.aiken"
